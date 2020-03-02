@@ -14,5 +14,6 @@ $factory->define(Post::class, function (Faker $faker) {
         'description' => $description,
         'content' => $content,
         'thumbnail' => 'test',
+        'online' => true,
     ];
 });

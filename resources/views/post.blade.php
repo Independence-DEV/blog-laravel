@@ -12,7 +12,7 @@
 
                     <p>{{$post->description}}</p>
                     <hr>
-                    {{$post->content}}
+                    {!! $post->content !!}
                 </div><!-- /.blog-post -->
 
             </div><!-- /.blog-main -->

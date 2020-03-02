@@ -18,8 +18,9 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->text('content');
-            $table->string('thumbnail');
+            $table->string('thumbnail')->default(null);
             $table->integer('category_id')->unsigned();
+            $table->boolean('online')->default(false);
             $table->timestamps();
         });
     }
